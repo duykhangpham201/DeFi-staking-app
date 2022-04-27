@@ -9,6 +9,8 @@ import "hardhat-deploy";
 import "solidity-coverage";
 import "hardhat-gas-reporter";
 import "hardhat-contract-sizer";
+// eslint-disable-next-line node/no-extraneous-import
+import "hardhat-deploy-ethers";
 
 dotenv.config();
 

@@ -5,7 +5,7 @@ module.exports = async () => {
   const { deploy, log } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  const rewardToken = await deployments.get("RewardToken");
+  const rewardToken = await ethers.getContract("RewardToken");
 
   const stakingDeployment = await deploy("Staking", {
     from: deployer,
